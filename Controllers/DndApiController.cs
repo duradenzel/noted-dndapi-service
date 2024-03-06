@@ -23,7 +23,6 @@ public class DndApiController : ControllerBase
 
         var responseData = await externalApiResponse.Content.ReadAsStringAsync();
         
-
         return Ok(responseData);
     }
     catch (HttpRequestException ex)
