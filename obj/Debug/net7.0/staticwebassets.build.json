@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "m+grZ+9o6DJBlm1GdqZRxCRQVxRHl0kXm2jb0nMB+Xk=",
+  "Source": "noted-dndapi-service",
+  "BasePath": "_content/noted-dndapi-service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
