@@ -30,4 +30,22 @@ public class DndApiController : ControllerBase
         return StatusCode(500, $"Error from external Dungeons and Dragons API: {ex.Message}");
     }
     }
+
+    [HttpGet("monsters")]
+    public async Task<IActionResult> GetMonsters()
+    {
+          try
+    {
+        var externalApiResponse = await _httpClient.GetAsync("https://api.open5e.com/v1/monsters/");
+        externalApiResponse.EnsureSuccessStatusCode();
+
+        var responseData = await externalApiResponse.Content.ReadAsStringAsync();
+        
+        return Ok(responseData);
+    }
+    catch (HttpRequestException ex)
+    {
+        return StatusCode(500, $"Error from external Dungeons and Dragons API: {ex.Message}");
+    }
+    }
 }
