@@ -25,7 +25,7 @@ public class DndApiController : ControllerBase
         }
         catch (HttpRequestException ex)
         {
-            return $"Error from external Dungeons and Dragons API: {ex.Message}";
+            return $"Error from external API: {ex.Message}";
         }
     }
 
@@ -34,7 +34,6 @@ public class DndApiController : ControllerBase
     {
        try
         {
-            Console.WriteLine("arrived at spells endpoint");
             var response = await _httpClient.GetAsync("https://api.open5e.com/v1/spells/");
             response.EnsureSuccessStatusCode();
 
