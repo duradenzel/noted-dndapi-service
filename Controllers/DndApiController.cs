@@ -13,22 +13,6 @@ public class DndApiController : ControllerBase
         _httpClient = httpClientFactory.CreateClient();
     }
 
-    [HttpGet("test")]
-    public async Task<string> Test(){
-
-         try
-        {
-            Console.WriteLine("arrived at spells endpoint");
-            var response = await _httpClient.GetAsync("https://api.open5e.com/v1/spells/");
-            
-            return await response.Content.ReadAsStringAsync();
-        }
-        catch (HttpRequestException ex)
-        {
-            return $"Error from external API: {ex.Message}";
-        }
-    }
-
     [HttpGet("spells")]
     public async Task<IActionResult> GetSpells()
     {
