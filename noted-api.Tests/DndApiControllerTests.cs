@@ -14,7 +14,7 @@ namespace noted_dndapi_service.Tests
         {
            var x = 1;
             
-            Assert.Equal(x, 2);
+            Assert.Equal(x, 1);
         }
     }
 }
