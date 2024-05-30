@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("noted-dndapi-service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86fc44405c7fe9c54623612d7cc5f4303ede2b2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a8b5455e4337a8dcc9cc3140c7572a4ae22304d")]
 [assembly: System.Reflection.AssemblyProductAttribute("noted-dndapi-service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("noted-dndapi-service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
