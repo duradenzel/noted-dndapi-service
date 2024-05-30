@@ -12,9 +12,9 @@ namespace noted_dndapi_service.Tests
         [Fact]
         public async Task Example_Test()
         {
-           var x = 1;
+           var x = 2;
             
-            Assert.Equal(x, 1);
+            Assert.Equal(x, 2);
         }
     }
 }
