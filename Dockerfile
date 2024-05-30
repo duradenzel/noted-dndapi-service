@@ -8,7 +8,7 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["noted-dndapi-service/noted-dndapi-service.csproj", "noted-dndapi-service"]
 COPY ["noted-api.Tests/noted-api.Tests.csproj", "noted-api.Tests"]
-RUN dotnet restore "PlusNine.Api/PlusNine.Api.csproj"
+RUN dotnet restore "noted-dndapi-service/noted-dndapi-service.csproj"
 COPY . .
 WORKDIR "/src/noted-dndapi.service"
 RUN dotnet build "noted-dndapi.service.csproj" -c $BUILD_CONFIGURATION -o /app/build
