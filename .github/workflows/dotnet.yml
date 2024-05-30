@@ -20,9 +20,13 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 7.0.x
+    - name: Move to api directory
+      run: cd noted-dndapi-service
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
+    - name: Move to test directory
+      run: cd noted-api.Tests
     - name: Test
       run: dotnet test --no-build --verbosity normal
