@@ -6,11 +6,11 @@ namespace noted_dndapi_service.Controllers;
 [Route("api")]
 public class DndApiController : ControllerBase
 {
-    private readonly HttpClient _httpClient;
+    private readonly DndApiService _apiService; 
 
-    public DndApiController(IHttpClientFactory httpClientFactory)
+    public DndApiController(DndApiService apiService)
     {
-        _httpClient = httpClientFactory.CreateClient();
+        _apiService = apiService;
     }
 
     [HttpGet("spells")]
@@ -18,12 +18,9 @@ public class DndApiController : ControllerBase
     {
        try
         {
-            var response = await _httpClient.GetAsync("https://api.open5e.com/v1/spells/");
-            response.EnsureSuccessStatusCode();
+            var spells = await _apiService.GetSpells();
+            return spells;
 
-            Response.Headers.Add("Content-Type", "application/json");
-
-            return Content(await response.Content.ReadAsStringAsync(), "application/json");
         }
         catch (HttpRequestException ex)
         {
@@ -36,12 +33,9 @@ public class DndApiController : ControllerBase
     {
         try
         {
-            var externalApiResponse = await _httpClient.GetAsync("https://api.open5e.com/v1/monsters/");
-            externalApiResponse.EnsureSuccessStatusCode();
-
-            var responseData = await externalApiResponse.Content.ReadAsStringAsync();
+            var response = await _apiService.GetMonsters();
             
-            return Ok(responseData);
+            return Ok(response);
         }
         catch (HttpRequestException ex)
         {

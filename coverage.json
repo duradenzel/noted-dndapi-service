@@ -1,0 +1,211 @@
+{
+  "noted-dndapi-service.dll": {
+    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Fontys\\Semester 3\\Individual Project\\Noted\\noted-api\\noted-dndapi-service\\noted-dndapi-service\\Program.cs": {
+      "Program": {
+        "System.Void Program::<Main>$(System.String[])": {
+          "Lines": {
+            "3": 0,
+            "7": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "34": 0,
+            "36": 0,
+            "39": 0,
+            "41": 0,
+            "43": 0
+          },
+          "Branches": [
+            {
+              "Line": 28,
+              "Offset": 141,
+              "EndOffset": 143,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 141,
+              "EndOffset": 161,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Fontys\\Semester 3\\Individual Project\\Noted\\noted-api\\noted-dndapi-service\\noted-dndapi-service\\WeatherForecast.cs": {
+      "noted_dndapi_service.WeatherForecast": {
+        "System.DateOnly noted_dndapi_service.WeatherForecast::get_Date()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 noted_dndapi_service.WeatherForecast::get_TemperatureC()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 noted_dndapi_service.WeatherForecast::get_TemperatureF()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String noted_dndapi_service.WeatherForecast::get_Summary()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Fontys\\Semester 3\\Individual Project\\Noted\\noted-api\\noted-dndapi-service\\noted-dndapi-service\\Controllers\\DndApiController.cs": {
+      "noted_dndapi_service.Controllers.DndApiController": {
+        "System.Void noted_dndapi_service.Controllers.DndApiController::.ctor(noted_dndapi_service.Controllers.DndApiService)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": []
+        }
+      },
+      "noted_dndapi_service.Controllers.DndApiController/<GetMonsters>d__3": {
+        "System.Void noted_dndapi_service.Controllers.DndApiController/<GetMonsters>d__3::MoveNext()": {
+          "Lines": {
+            "33": 0,
+            "35": 0,
+            "36": 0,
+            "38": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "44": 0
+          },
+          "Branches": []
+        }
+      },
+      "noted_dndapi_service.Controllers.DndApiController/<GetSpells>d__2": {
+        "System.Void noted_dndapi_service.Controllers.DndApiController/<GetSpells>d__2::MoveNext()": {
+          "Lines": {
+            "18": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "29": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Fontys\\Semester 3\\Individual Project\\Noted\\noted-api\\noted-dndapi-service\\noted-dndapi-service\\Repositories\\DndApiRepository.cs": {
+      "noted_dndapi_service.Controllers.DndApiRepository": {
+        "System.Void noted_dndapi_service.Controllers.DndApiRepository::.ctor()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        }
+      },
+      "noted_dndapi_service.Controllers.DndApiRepository/<GetMonsters>d__2": {
+        "System.Void noted_dndapi_service.Controllers.DndApiRepository/<GetMonsters>d__2::MoveNext()": {
+          "Lines": {
+            "24": 0,
+            "26": 0,
+            "27": 0,
+            "29": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "35": 0
+          },
+          "Branches": []
+        }
+      },
+      "noted_dndapi_service.Controllers.DndApiRepository/<GetSpells>d__1": {
+        "System.Void noted_dndapi_service.Controllers.DndApiRepository/<GetSpells>d__1::MoveNext()": {
+          "Lines": {
+            "10": 0,
+            "12": 0,
+            "13": 0,
+            "15": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Fontys\\Semester 3\\Individual Project\\Noted\\noted-api\\noted-dndapi-service\\noted-dndapi-service\\Services\\DndApiService.cs": {
+      "noted_dndapi_service.Controllers.DndApiService": {
+        "System.Void noted_dndapi_service.Controllers.DndApiService::.ctor(noted_dndapi_service.Controllers.DndApiRepository)": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Branches": []
+        }
+      },
+      "noted_dndapi_service.Controllers.DndApiService/<GetMonsters>d__3": {
+        "System.Void noted_dndapi_service.Controllers.DndApiService/<GetMonsters>d__3::MoveNext()": {
+          "Lines": {
+            "29": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0
+          },
+          "Branches": []
+        }
+      },
+      "noted_dndapi_service.Controllers.DndApiService/<GetSpells>d__2": {
+        "System.Void noted_dndapi_service.Controllers.DndApiService/<GetSpells>d__2::MoveNext()": {
+          "Lines": {
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "26": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
