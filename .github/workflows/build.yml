@@ -50,7 +50,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"duradenzel_noted-dndapi-service" /o:"duradenzel" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportPaths=coverage.xml
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"duradenzel_noted-dndapi-service" /o:"duradenzel" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths=/*/.xml
           dotnet build --no-incremental
-          coverlet .\noted-api.Tests\bin\Debug\net8.0\noted-api.Tests.dll --target "dotnet" --targetargs "test --no-build" -f=opencover -o="doverage.xml"
+          coverlet .\noted-api.Tests\bin\Debug\net8.0\noted-api.Tests.dll --target "dotnet" --targetargs "test --no-build" -f=opencover
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
