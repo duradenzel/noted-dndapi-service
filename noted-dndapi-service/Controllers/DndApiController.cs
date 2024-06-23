@@ -16,11 +16,10 @@ public class DndApiController : ControllerBase
     [HttpGet("spells")]
     public async Task<IActionResult> GetSpells()
     {
-       try
+        try
         {
             var spells = await _apiService.GetSpells();
-            return spells;
-
+            return Ok(spells);
         }
         catch (HttpRequestException ex)
         {
@@ -33,9 +32,8 @@ public class DndApiController : ControllerBase
     {
         try
         {
-            var response = await _apiService.GetMonsters();
-            
-            return Ok(response);
+            var monsters = await _apiService.GetMonsters();
+            return Ok(monsters);
         }
         catch (HttpRequestException ex)
         {

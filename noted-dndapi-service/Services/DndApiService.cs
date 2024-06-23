@@ -1,8 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
+using noted_dndapi_service.Controllers;
 
-namespace noted_dndapi_service.Controllers;
-
-public class DndApiService : ControllerBase
+public class DndApiService
 {
     private readonly DndApiRepository _apiRepository;
 
@@ -11,30 +9,13 @@ public class DndApiService : ControllerBase
         _apiRepository = apiRepository;
     }
 
-   
-    public async Task<IActionResult> GetSpells()
+    public async Task<string> GetSpells()
     {
-       try
-        {
-            var spells = await _apiRepository.GetSpells();
-            return spells;
-        }
-        catch (HttpRequestException ex)
-        {
-            return StatusCode(500, $"Error from external Dungeons and Dragons API: {ex.Message}");
-        }
+        return await _apiRepository.GetSpells();
     }
 
-    public async Task<IActionResult> GetMonsters()
+    public async Task<string> GetMonsters()
     {
-        try
-        {
-            var monsters = await _apiRepository.GetMonsters();
-            return monsters;
-        }
-        catch (HttpRequestException ex)
-        {
-            return StatusCode(500, $"Error from external Dungeons and Dragons API: {ex.Message}");
-        }
+        return await _apiRepository.GetMonsters();
     }
 }
